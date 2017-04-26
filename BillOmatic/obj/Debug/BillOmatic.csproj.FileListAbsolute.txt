@@ -1,0 +1,11 @@
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\bin\Debug\BillOmatic.exe.config
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\bin\Debug\BillOmatic.exe
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\bin\Debug\BillOmatic.pdb
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.csprojResolveAssemblyReference.cache
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.Properties.Resources.resources
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.csproj.GenerateResource.Cache
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.exe
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.pdb
+c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.Form_BillInput.resources
+C:\Users\Virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.DebtorsInformation.resources
+C:\Users\Virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.Form_CalendarView.resources

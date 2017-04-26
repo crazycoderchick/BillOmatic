@@ -1,0 +1,23 @@
+TODO List:
+
+- Ensure a bill can only be added to the list once.
+- Add calendar.
+- Plot bills on calendar.
+- Change file save location.
+- Varify bill is saved succesffuly and notify user of 
+	actual status. Right now user is told successful regardless 
+	of actual status.  ProgramManager LINE: 21
+- Add access to the url from the bill information page.
+- Add an edit button and make it function.
+- Add a settings page (user preferences).
+- Save user preferences.
+- Dynamically set WELCOME statement
+- 
+- 
+
+COMPLETED :
+
+Show user a notification when bill creation is successful.
+Add notes and bill type options to the form.
+Add notes and bill type to bill constructor.
+Deal with attempting to load when there is no data file.
