@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Calendar.NET">
+      <HintPath>..\Libraries\Calendar.NET.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +49,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalendarViewForm.cs">
@@ -53,6 +61,7 @@
       <DependentUpon>CalendarViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Bill.cs" />
+    <Compile Include="Classes\CalendarEvent.cs" />
     <Compile Include="Classes\DataIOManager.cs" />
     <Compile Include="Classes\ProgramManager.cs" />
     <Compile Include="DebtorsInformation.cs">
@@ -60,6 +69,12 @@
     </Compile>
     <Compile Include="DebtorsInformation.Designer.cs">
       <DependentUpon>DebtorsInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncfusionTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncfusionTest.Designer.cs">
+      <DependentUpon>SyncfusionTest.cs</DependentUpon>
     </Compile>
     <Compile Include="TheBillOmatic.cs">
       <SubType>Form</SubType>
@@ -74,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DebtorsInformation.resx">
       <DependentUpon>DebtorsInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncfusionTest.resx">
+      <DependentUpon>SyncfusionTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TheBillOmatic.resx">
       <DependentUpon>TheBillOmatic.cs</DependentUpon>

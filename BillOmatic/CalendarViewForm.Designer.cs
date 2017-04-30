@@ -30,14 +30,14 @@
         {
             this.Button_AddNewBill = new System.Windows.Forms.Button();
             this.Button_PrintList = new System.Windows.Forms.Button();
-            this.TextBox_CalendarArea = new System.Windows.Forms.TextBox();
             this.Label_Welcome = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Calendar = new Calendar.NET.Calendar();
             this.SuspendLayout();
             // 
             // Button_AddNewBill
             // 
-            this.Button_AddNewBill.Location = new System.Drawing.Point(52, 459);
+            this.Button_AddNewBill.Location = new System.Drawing.Point(51, 512);
             this.Button_AddNewBill.Name = "Button_AddNewBill";
             this.Button_AddNewBill.Size = new System.Drawing.Size(132, 49);
             this.Button_AddNewBill.TabIndex = 0;
@@ -47,21 +47,13 @@
             // 
             // Button_PrintList
             // 
-            this.Button_PrintList.Location = new System.Drawing.Point(669, 459);
+            this.Button_PrintList.Location = new System.Drawing.Point(666, 512);
             this.Button_PrintList.Name = "Button_PrintList";
             this.Button_PrintList.Size = new System.Drawing.Size(136, 49);
             this.Button_PrintList.TabIndex = 9;
             this.Button_PrintList.Text = "Print My Bills";
             this.Button_PrintList.UseVisualStyleBackColor = true;
             this.Button_PrintList.Click += new System.EventHandler(this.Button_PrintList_Click);
-            // 
-            // TextBox_CalendarArea
-            // 
-            this.TextBox_CalendarArea.Location = new System.Drawing.Point(43, 104);
-            this.TextBox_CalendarArea.Multiline = true;
-            this.TextBox_CalendarArea.Name = "TextBox_CalendarArea";
-            this.TextBox_CalendarArea.Size = new System.Drawing.Size(746, 310);
-            this.TextBox_CalendarArea.TabIndex = 10;
             // 
             // Label_Welcome
             // 
@@ -73,13 +65,38 @@
             this.Label_Welcome.TabIndex = 11;
             this.Label_Welcome.Text = "Welcome Dial Family!!!";
             // 
+            // Calendar
+            // 
+            this.Calendar.AllowEditingEvents = true;
+            this.Calendar.BackColor = System.Drawing.SystemColors.Window;
+            this.Calendar.CalendarDate = new System.DateTime(2017, 4, 29, 19, 58, 35, 736);
+            this.Calendar.CalendarView = Calendar.NET.CalendarViews.Month;
+            this.Calendar.DateHeaderFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.Calendar.DayOfWeekFont = new System.Drawing.Font("Arial", 10F);
+            this.Calendar.DaysFont = new System.Drawing.Font("Arial", 10F);
+            this.Calendar.DayViewTimeFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Calendar.DimDisabledEvents = true;
+            this.Calendar.HighlightCurrentDay = true;
+            this.Calendar.LoadPresetHolidays = true;
+            this.Calendar.Location = new System.Drawing.Point(12, 70);
+            this.Calendar.Name = "Calendar";
+            this.Calendar.ShowArrowControls = true;
+            this.Calendar.ShowDashedBorderOnDisabledEvents = true;
+            this.Calendar.ShowDateInHeader = true;
+            this.Calendar.ShowDisabledEvents = false;
+            this.Calendar.ShowEventTooltips = true;
+            this.Calendar.ShowTodayButton = true;
+            this.Calendar.Size = new System.Drawing.Size(811, 424);
+            this.Calendar.TabIndex = 12;
+            this.Calendar.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            // 
             // Form_CalendarView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 522);
+            this.ClientSize = new System.Drawing.Size(835, 573);
+            this.Controls.Add(this.Calendar);
             this.Controls.Add(this.Label_Welcome);
-            this.Controls.Add(this.TextBox_CalendarArea);
             this.Controls.Add(this.Button_PrintList);
             this.Controls.Add(this.Button_AddNewBill);
             this.Name = "Form_CalendarView";
@@ -94,8 +111,8 @@
 
         private System.Windows.Forms.Button Button_AddNewBill;
         private System.Windows.Forms.Button Button_PrintList;
-        private System.Windows.Forms.TextBox TextBox_CalendarArea;
         private System.Windows.Forms.Label Label_Welcome;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Calendar.NET.Calendar Calendar;
     }
 }

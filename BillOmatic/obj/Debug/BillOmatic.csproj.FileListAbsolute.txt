@@ -9,3 +9,13 @@ c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\ob
 c:\users\virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.Form_BillInput.resources
 C:\Users\Virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.DebtorsInformation.resources
 C:\Users\Virginia\documents\visual studio 2015\Projects\BillOmatic\BillOmatic\obj\Debug\BillOmatic.Form_CalendarView.resources
+C:\TheBillOmatic\Project\BillOmatic\bin\Debug\BillOmatic.exe.config
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.exe
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.pdb
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.csprojResolveAssemblyReference.cache
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.Form_CalendarView.resources
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.DebtorsInformation.resources
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.SyncfusionTest.resources
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.Form_BillInput.resources
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.Properties.Resources.resources
+C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.csproj.GenerateResource.Cache

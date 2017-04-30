@@ -14,7 +14,7 @@ namespace BillOmatic
     public partial class Form_CalendarView : Form
     {
         private ProgramManager _programManager;
-
+        
         public Form_CalendarView(ProgramManager programManager, List<Bill> bills)
         {
             _programManager = programManager;
@@ -36,14 +36,21 @@ namespace BillOmatic
 
         private void plotBillsOnCalendar(List<Bill> bills)
         {
-            string text = "";
+            
 
             foreach(Bill bill in bills)
             {
-                text += "  " + bill.name;
+                var exerciseEvent = new CustomEvent
+                {
+                    Date = DateTime.Now,
+                    RecurringFrequency = RecurringFrequencies.EveryMonWedFri,
+                    EventText = "Time for Exercise!"
+                };
+
+                Calendar.AddEvent(billData);
             }
 
-            TextBox_CalendarArea.Text = text;
+            
         }
     }
 }
