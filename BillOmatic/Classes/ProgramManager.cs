@@ -22,7 +22,7 @@ namespace BillOmatic.Classes
             Application.Run(f);
         }
 
-        public void createBill(string billName, float billAmount, int billDueDate, int billType, string billNotes)
+        public void createBill(string billName, float billAmount, DateTime billDueDate, int billType, string billNotes)
         {
             Bill newBill = new Bill(billName, billAmount, billDueDate, billType, billNotes);
             addBillToList(newBill);
