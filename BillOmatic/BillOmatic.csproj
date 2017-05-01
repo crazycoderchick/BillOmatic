@@ -70,12 +70,6 @@
     <Compile Include="DebtorsInformation.Designer.cs">
       <DependentUpon>DebtorsInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="SyncfusionTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SyncfusionTest.Designer.cs">
-      <DependentUpon>SyncfusionTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="TheBillOmatic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,9 +83,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DebtorsInformation.resx">
       <DependentUpon>DebtorsInformation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SyncfusionTest.resx">
-      <DependentUpon>SyncfusionTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TheBillOmatic.resx">
       <DependentUpon>TheBillOmatic.cs</DependentUpon>

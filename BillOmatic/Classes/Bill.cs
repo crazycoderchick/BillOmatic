@@ -20,11 +20,11 @@ namespace BillOmatic.Classes
         private int _type;
         private string _name;
         private float _amount;
-        private int _dueDate;
+        private DateTime _dueDate;
         private string _notes;
 
         // TODO : Add all parameters
-        public Bill(string billName, float billAmount, int billDueDate, int type, string notes)
+        public Bill(string billName, float billAmount, DateTime billDueDate, int type, string notes)
         {
             _name = billName;
             _amount = billAmount;
@@ -48,7 +48,7 @@ namespace BillOmatic.Classes
             get { return _amount; }
         }
 
-        public int dueDate
+        public DateTime dueDate
         {
             get { return _dueDate; }
         }

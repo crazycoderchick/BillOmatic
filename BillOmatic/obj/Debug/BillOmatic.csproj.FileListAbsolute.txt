@@ -15,7 +15,9 @@ C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.pdb
 C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.csprojResolveAssemblyReference.cache
 C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.Form_CalendarView.resources
 C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.DebtorsInformation.resources
-C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.SyncfusionTest.resources
 C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.Form_BillInput.resources
 C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.Properties.Resources.resources
 C:\TheBillOmatic\Project\BillOmatic\obj\Debug\BillOmatic.csproj.GenerateResource.Cache
+C:\TheBillOmatic\Project\BillOmatic\bin\Debug\BillOmatic.exe
+C:\TheBillOmatic\Project\BillOmatic\bin\Debug\BillOmatic.pdb
+C:\TheBillOmatic\Project\BillOmatic\bin\Debug\Calendar.NET.dll

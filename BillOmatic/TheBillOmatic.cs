@@ -21,7 +21,6 @@ namespace BillOmatic
             _programManager.BillInputForm = this;
            // _programManager.currentForm = this;
             InitializeComponent();
-            displayAvailableDueDates();
             
             List<string> types = new List<string>();  // TODO : Temporary! This list will be built by the Program Manager after reading the saved user preferences file.
             types.Add("Utilities");
@@ -36,7 +35,7 @@ namespace BillOmatic
         // TODO : Input validation
         private void Button_Submit_Click(object sender, EventArgs e)
         {            
-            _programManager.createBill(TextBox_BillName.Text, float.Parse(TextBox_BillAmount.Text), (ComboBox_BillDueDate.SelectedIndex + 1), ComboBox_BillType.SelectedIndex, TextBox_BillNotes.Text);
+            _programManager.createBill(TextBox_BillName.Text, float.Parse(TextBox_BillAmount.Text), DateTimePicker_DueDate.Value, ComboBox_BillType.SelectedIndex, TextBox_BillNotes.Text);
             clearTextFields();
         }        
 
@@ -51,7 +50,6 @@ namespace BillOmatic
             TextBox_BillAmount.Text = "";
             ComboBox_BillType.Text = "";
             TextBox_BillNotes.Text = "";
-            ComboBox_BillDueDate.Text = "";
             TextBox_CreditorAddress.Text = "";
             TextBox_CreditorName.Text = "";
             TextBox_CreditorPhoneNumber.Text = "";
@@ -75,16 +73,7 @@ namespace BillOmatic
             }
         }
 
-        public void displayAvailableDueDates() // Adds 1 - 31 to the date combo box.
-        {
-            for (int i = 0; i < 31; i++)
-            {
-                ComboBoxItem item = new ComboBoxItem();
-                item.Text = (i + 1).ToString();
-                ComboBox_BillDueDate.Items.Add(item);
-            }
-        }
-
+        
         private class ComboBoxItem
         {
             public string Text { get; set; }
