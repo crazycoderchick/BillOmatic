@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,9 @@ namespace BillOmatic.Classes
             Application.Run(f);
         }
 
-        public void createBill(string billName, float billAmount, DateTime billDueDate, int billType, string billNotes)
+        public void createBill(string billName, float billAmount, DateTime billDueDate, int billType, string billNotes, BillAppearance apperance)
         {
-            Bill newBill = new Bill(billName, billAmount, billDueDate, billType, billNotes);
+            Bill newBill = new Bill(billName, billAmount, billDueDate, billType, billNotes, apperance);
             addBillToList(newBill);
             saveBillList();
             BillInputForm.clearTextFields();
