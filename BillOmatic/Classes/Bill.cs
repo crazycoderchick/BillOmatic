@@ -8,6 +8,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,14 +24,17 @@ namespace BillOmatic.Classes
         private DateTime _dueDate;
         private string _notes;
 
+        public BillAppearance apperanceContainer;
+
         // TODO : Add all parameters
-        public Bill(string billName, float billAmount, DateTime billDueDate, int type, string notes)
+        public Bill(string billName, float billAmount, DateTime billDueDate, int type, string notes, BillAppearance apperance)
         {
             _name = billName;
             _amount = billAmount;
             _dueDate = billDueDate;
             _type = type;
             _notes = notes;
+            apperanceContainer = apperance;
         }
 
         public int type

@@ -54,12 +54,12 @@ namespace BillOmatic
 
                 //Event Styling
                 billData.EventFont = new Font("Arial", 9.0f, FontStyle.Regular);
-                billData.EventColor = Color.White;
-                billData.EventTextColor = Color.Black;
+                billData.EventColor = bill.apperanceContainer.backgroundColor;
+                billData.EventTextColor = bill.apperanceContainer.fontColor;
 
                 Console.WriteLine("************************************" + billData.Date.ToString() + billData.EventText);
 
-                VirginiaCalendar.AddEvent(billData);
+                Calendar.AddEvent(billData);
             }
 
         }

@@ -61,31 +61,23 @@
       <DependentUpon>CalendarViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Bill.cs" />
+    <Compile Include="Classes\BillApperance.cs" />
     <Compile Include="Classes\CalendarEvent.cs" />
     <Compile Include="Classes\DataIOManager.cs" />
     <Compile Include="Classes\ProgramManager.cs" />
-    <Compile Include="DebtorsInformation.cs">
+    <Compile Include="BillInputForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DebtorsInformation.Designer.cs">
-      <DependentUpon>DebtorsInformation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TheBillOmatic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TheBillOmatic.Designer.cs">
-      <DependentUpon>TheBillOmatic.cs</DependentUpon>
+    <Compile Include="BillInputForm.Designer.cs">
+      <DependentUpon>BillInputForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CalendarViewForm.resx">
       <DependentUpon>CalendarViewForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DebtorsInformation.resx">
-      <DependentUpon>DebtorsInformation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TheBillOmatic.resx">
-      <DependentUpon>TheBillOmatic.cs</DependentUpon>
+    <EmbeddedResource Include="BillInputForm.resx">
+      <DependentUpon>BillInputForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -34,7 +34,7 @@ namespace BillOmatic
             this.Button_PrintList = new System.Windows.Forms.Button();
             this.Label_Welcome = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.VirginiaCalendar = new Calendar.NET.Calendar();
+            this.Calendar = new Calendar.NET.Calendar();
             this.SuspendLayout();
             // 
             // Button_AddNewBill
@@ -67,36 +67,36 @@ namespace BillOmatic
             this.Label_Welcome.TabIndex = 11;
             this.Label_Welcome.Text = "Welcome Dial Family!!!";
             // 
-            // VirginiaCalendar
+            // Calendar
             // 
-            this.VirginiaCalendar.AllowEditingEvents = true;
-            this.VirginiaCalendar.CalendarDate = new System.DateTime(2017, 4, 29, 22, 14, 35, 347);
-            this.VirginiaCalendar.CalendarView = Calendar.NET.CalendarViews.Month;
-            this.VirginiaCalendar.DateHeaderFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.VirginiaCalendar.DayOfWeekFont = new System.Drawing.Font("Arial", 10F);
-            this.VirginiaCalendar.DaysFont = new System.Drawing.Font("Arial", 10F);
-            this.VirginiaCalendar.DayViewTimeFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.VirginiaCalendar.DimDisabledEvents = true;
-            this.VirginiaCalendar.HighlightCurrentDay = true;
-            this.VirginiaCalendar.LoadPresetHolidays = true;
-            this.VirginiaCalendar.Location = new System.Drawing.Point(152, 52);
-            this.VirginiaCalendar.Name = "VirginiaCalendar";
-            this.VirginiaCalendar.ShowArrowControls = true;
-            this.VirginiaCalendar.ShowDashedBorderOnDisabledEvents = true;
-            this.VirginiaCalendar.ShowDateInHeader = true;
-            this.VirginiaCalendar.ShowDisabledEvents = false;
-            this.VirginiaCalendar.ShowEventTooltips = true;
-            this.VirginiaCalendar.ShowTodayButton = true;
-            this.VirginiaCalendar.Size = new System.Drawing.Size(512, 440);
-            this.VirginiaCalendar.TabIndex = 12;
-            this.VirginiaCalendar.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Calendar.AllowEditingEvents = true;
+            this.Calendar.CalendarDate = new System.DateTime(2017, 4, 29, 22, 14, 35, 347);
+            this.Calendar.CalendarView = CalendarViews.Month;
+            this.Calendar.DateHeaderFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.Calendar.DayOfWeekFont = new System.Drawing.Font("Arial", 10F);
+            this.Calendar.DaysFont = new System.Drawing.Font("Arial", 10F);
+            this.Calendar.DayViewTimeFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.Calendar.DimDisabledEvents = true;
+            this.Calendar.HighlightCurrentDay = true;
+            this.Calendar.LoadPresetHolidays = true;
+            this.Calendar.Location = new System.Drawing.Point(31, 80);
+            this.Calendar.Name = "Calendar";
+            this.Calendar.ShowArrowControls = true;
+            this.Calendar.ShowDashedBorderOnDisabledEvents = true;
+            this.Calendar.ShowDateInHeader = true;
+            this.Calendar.ShowDisabledEvents = false;
+            this.Calendar.ShowEventTooltips = true;
+            this.Calendar.ShowTodayButton = true;
+            this.Calendar.Size = new System.Drawing.Size(775, 415);
+            this.Calendar.TabIndex = 12;
+            this.Calendar.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             // 
             // Form_CalendarView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 573);
-            this.Controls.Add(this.VirginiaCalendar);
+            this.ClientSize = new System.Drawing.Size(835, 598);
+            this.Controls.Add(this.Calendar);
             this.Controls.Add(this.Label_Welcome);
             this.Controls.Add(this.Button_PrintList);
             this.Controls.Add(this.Button_AddNewBill);
@@ -114,6 +114,6 @@ namespace BillOmatic
         private System.Windows.Forms.Button Button_PrintList;
         private System.Windows.Forms.Label Label_Welcome;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Calendar.NET.Calendar VirginiaCalendar;
+        private Calendar.NET.Calendar Calendar;
     }
 }
