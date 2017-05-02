@@ -102,6 +102,7 @@ namespace BillOmatic
             TextBox_CreditorURL.Text = "";
             TextBox_CreditorURLPassword.Text = "";
             TextBox_CreditorURLUsername.Text = "";
+            DateTimePicker_DueDate.Value = DateTime.Now;
         }
 
         public void displayNotificationBox(string message)
