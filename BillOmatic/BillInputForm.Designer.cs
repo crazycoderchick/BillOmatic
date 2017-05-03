@@ -56,6 +56,9 @@
             this.DateTimePicker_DueDate = new System.Windows.Forms.DateTimePicker();
             this.Label_BillEventColors = new System.Windows.Forms.Label();
             this.ComboBox_EventColor = new System.Windows.Forms.ComboBox();
+            this.Label_Warning_BillName = new System.Windows.Forms.Label();
+            this.Label_Warning_BillAmount = new System.Windows.Forms.Label();
+            this.Label_Warning_BillType = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Label_BillName
@@ -73,7 +76,7 @@
             // 
             this.Label_BillDueDate.AutoSize = true;
             this.Label_BillDueDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_BillDueDate.Location = new System.Drawing.Point(27, 107);
+            this.Label_BillDueDate.Location = new System.Drawing.Point(26, 128);
             this.Label_BillDueDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_BillDueDate.Name = "Label_BillDueDate";
             this.Label_BillDueDate.Size = new System.Drawing.Size(77, 16);
@@ -84,7 +87,7 @@
             // 
             this.Label_BillAmountDue.AutoSize = true;
             this.Label_BillAmountDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_BillAmountDue.Location = new System.Drawing.Point(26, 71);
+            this.Label_BillAmountDue.Location = new System.Drawing.Point(26, 84);
             this.Label_BillAmountDue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_BillAmountDue.Name = "Label_BillAmountDue";
             this.Label_BillAmountDue.Size = new System.Drawing.Size(95, 16);
@@ -96,12 +99,12 @@
             this.TextBox_BillName.Location = new System.Drawing.Point(199, 37);
             this.TextBox_BillName.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_BillName.Name = "TextBox_BillName";
-            this.TextBox_BillName.Size = new System.Drawing.Size(429, 22);
+            this.TextBox_BillName.Size = new System.Drawing.Size(294, 22);
             this.TextBox_BillName.TabIndex = 3;
             // 
             // TextBox_BillAmount
             // 
-            this.TextBox_BillAmount.Location = new System.Drawing.Point(199, 71);
+            this.TextBox_BillAmount.Location = new System.Drawing.Point(199, 84);
             this.TextBox_BillAmount.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_BillAmount.Name = "TextBox_BillAmount";
             this.TextBox_BillAmount.Size = new System.Drawing.Size(157, 22);
@@ -134,7 +137,7 @@
             // 
             this.Label_BillType.AutoSize = true;
             this.Label_BillType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_BillType.Location = new System.Drawing.Point(27, 140);
+            this.Label_BillType.Location = new System.Drawing.Point(26, 174);
             this.Label_BillType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_BillType.Name = "Label_BillType";
             this.Label_BillType.Size = new System.Drawing.Size(78, 16);
@@ -144,7 +147,7 @@
             // ComboBox_BillType
             // 
             this.ComboBox_BillType.FormattingEnabled = true;
-            this.ComboBox_BillType.Location = new System.Drawing.Point(199, 140);
+            this.ComboBox_BillType.Location = new System.Drawing.Point(199, 174);
             this.ComboBox_BillType.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBox_BillType.Name = "ComboBox_BillType";
             this.ComboBox_BillType.Size = new System.Drawing.Size(226, 24);
@@ -154,7 +157,7 @@
             // 
             this.Label_BillNotes.AutoSize = true;
             this.Label_BillNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_BillNotes.Location = new System.Drawing.Point(26, 208);
+            this.Label_BillNotes.Location = new System.Drawing.Point(27, 279);
             this.Label_BillNotes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_BillNotes.Name = "Label_BillNotes";
             this.Label_BillNotes.Size = new System.Drawing.Size(57, 16);
@@ -164,7 +167,7 @@
             // TextBox_BillNotes
             // 
             this.TextBox_BillNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_BillNotes.Location = new System.Drawing.Point(199, 208);
+            this.TextBox_BillNotes.Location = new System.Drawing.Point(199, 279);
             this.TextBox_BillNotes.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_BillNotes.Multiline = true;
             this.TextBox_BillNotes.Name = "TextBox_BillNotes";
@@ -292,7 +295,7 @@
             // 
             // DateTimePicker_DueDate
             // 
-            this.DateTimePicker_DueDate.Location = new System.Drawing.Point(199, 107);
+            this.DateTimePicker_DueDate.Location = new System.Drawing.Point(199, 128);
             this.DateTimePicker_DueDate.Name = "DateTimePicker_DueDate";
             this.DateTimePicker_DueDate.Size = new System.Drawing.Size(226, 22);
             this.DateTimePicker_DueDate.TabIndex = 30;
@@ -300,7 +303,7 @@
             // Label_BillEventColors
             // 
             this.Label_BillEventColors.AutoSize = true;
-            this.Label_BillEventColors.Location = new System.Drawing.Point(26, 174);
+            this.Label_BillEventColors.Location = new System.Drawing.Point(26, 216);
             this.Label_BillEventColors.Name = "Label_BillEventColors";
             this.Label_BillEventColors.Size = new System.Drawing.Size(163, 16);
             this.Label_BillEventColors.TabIndex = 31;
@@ -309,16 +312,46 @@
             // ComboBox_EventColor
             // 
             this.ComboBox_EventColor.FormattingEnabled = true;
-            this.ComboBox_EventColor.Location = new System.Drawing.Point(199, 174);
+            this.ComboBox_EventColor.Location = new System.Drawing.Point(199, 216);
             this.ComboBox_EventColor.Name = "ComboBox_EventColor";
             this.ComboBox_EventColor.Size = new System.Drawing.Size(226, 24);
             this.ComboBox_EventColor.TabIndex = 32;
+            // 
+            // Label_Warning_BillName
+            // 
+            this.Label_Warning_BillName.AutoSize = true;
+            this.Label_Warning_BillName.ForeColor = System.Drawing.Color.Red;
+            this.Label_Warning_BillName.Location = new System.Drawing.Point(514, 40);
+            this.Label_Warning_BillName.Name = "Label_Warning_BillName";
+            this.Label_Warning_BillName.Size = new System.Drawing.Size(0, 16);
+            this.Label_Warning_BillName.TabIndex = 33;
+            // 
+            // Label_Warning_BillAmount
+            // 
+            this.Label_Warning_BillAmount.AutoSize = true;
+            this.Label_Warning_BillAmount.ForeColor = System.Drawing.Color.Red;
+            this.Label_Warning_BillAmount.Location = new System.Drawing.Point(376, 90);
+            this.Label_Warning_BillAmount.Name = "Label_Warning_BillAmount";
+            this.Label_Warning_BillAmount.Size = new System.Drawing.Size(0, 16);
+            this.Label_Warning_BillAmount.TabIndex = 34;
+            // 
+            // Label_Warning_BillType
+            // 
+            this.Label_Warning_BillType.AutoSize = true;
+            this.Label_Warning_BillType.ForeColor = System.Drawing.Color.Red;
+            this.Label_Warning_BillType.Location = new System.Drawing.Point(447, 177);
+            this.Label_Warning_BillType.Name = "Label_Warning_BillType";
+            this.Label_Warning_BillType.Size = new System.Drawing.Size(0, 16);
+            this.Label_Warning_BillType.TabIndex = 35;
             // 
             // Form_BillInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 772);
+            this.Controls.Add(this.Label_Warning_BillType);
+            this.Controls.Add(this.Label_Warning_BillAmount);
+            this.Controls.Add(this.Label_Warning_BillName);
             this.Controls.Add(this.ComboBox_EventColor);
             this.Controls.Add(this.Label_BillEventColors);
             this.Controls.Add(this.DateTimePicker_DueDate);
@@ -387,6 +420,9 @@
         private System.Windows.Forms.DateTimePicker DateTimePicker_DueDate;
         private System.Windows.Forms.Label Label_BillEventColors;
         private System.Windows.Forms.ComboBox ComboBox_EventColor;
+        private System.Windows.Forms.Label Label_Warning_BillName;
+        private System.Windows.Forms.Label Label_Warning_BillAmount;
+        private System.Windows.Forms.Label Label_Warning_BillType;
     }
 }
 

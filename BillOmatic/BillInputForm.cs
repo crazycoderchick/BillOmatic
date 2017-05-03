@@ -41,9 +41,63 @@ namespace BillOmatic
 
         // TODO : Input validation
         private void Button_Submit_Click(object sender, EventArgs e)
-        {            
-            _programManager.createBill(TextBox_BillName.Text, float.Parse(TextBox_BillAmount.Text), DateTimePicker_DueDate.Value, ComboBox_BillType.SelectedIndex, TextBox_BillNotes.Text, SetBillAppearancePreferences());
-            clearTextFields();
+        {
+            string billName = null;
+            float billAmount = -1;
+            int billType = -1;
+            bool allInputsValid = true;
+
+            if(TextBox_BillName.Text.Length > 1)
+            {
+                billName = TextBox_BillName.Text;
+                Label_Warning_BillName.Text = "";
+            }
+            else
+            {
+                Label_Warning_BillName.Text = "Bill name required!!";
+                allInputsValid = false;
+            }
+
+
+            if (TextBox_BillAmount.Text.Length > 1)
+            {
+                
+                float.TryParse(TextBox_BillAmount.Text, out billAmount);
+                
+                if (billAmount == 0)
+                {
+                   Label_Warning_BillAmount.Text = "Amount must be numeric!!";
+                    allInputsValid = false;
+                }
+                else  // This is the only successfull parsing of the BillAmount TextBox
+                {
+                    Label_Warning_BillAmount.Text = "";
+                }
+            }
+            else
+            {
+                Label_Warning_BillAmount.Text = "Bill amount required in the following format ex: 0.00";
+                allInputsValid = false;
+            }
+
+
+            if (ComboBox_BillType.SelectedIndex > 0)
+            {
+                billType = ComboBox_BillType.SelectedIndex;
+                Label_Warning_BillType.Text = "";
+            }
+            else
+            {
+                Label_Warning_BillType.Text = "Bill type is required!!";
+                allInputsValid = false;
+            }
+
+
+            if (allInputsValid)
+            {
+                _programManager.createBill(billName, billAmount, DateTimePicker_DueDate.Value, billType, TextBox_BillNotes.Text, SetBillAppearancePreferences());
+                clearTextFields(); 
+            }
         }        
 
         private void Button_Clear_Click(object sender, EventArgs e)
@@ -103,6 +157,9 @@ namespace BillOmatic
             TextBox_CreditorURLPassword.Text = "";
             TextBox_CreditorURLUsername.Text = "";
             DateTimePicker_DueDate.Value = DateTime.Now;
+            Label_Warning_BillAmount.Text = "";
+            Label_Warning_BillName.Text = "";
+            Label_Warning_BillType.Text = "";
         }
 
         public void displayNotificationBox(string message)
