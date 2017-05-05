@@ -63,6 +63,7 @@
     <Compile Include="Classes\Bill.cs" />
     <Compile Include="Classes\BillApperance.cs" />
     <Compile Include="Classes\CalendarEvent.cs" />
+    <Compile Include="Classes\CreditorInformation.cs" />
     <Compile Include="Classes\DataIOManager.cs" />
     <Compile Include="Classes\ProgramManager.cs" />
     <Compile Include="BillInputForm.cs">

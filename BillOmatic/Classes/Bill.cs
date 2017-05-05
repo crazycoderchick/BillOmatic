@@ -26,8 +26,10 @@ namespace BillOmatic.Classes
 
         public BillAppearance apperanceContainer;
 
+        public CreditorInformation _creditorInformation;
+
         // TODO : Add all parameters
-        public Bill(string billName, float billAmount, DateTime billDueDate, int type, string notes, BillAppearance apperance)
+        public Bill(string billName, float billAmount, DateTime billDueDate, int type, string notes, BillAppearance apperance, CreditorInformation creditorInformation)
         {
             _name = billName;
             _amount = billAmount;
@@ -35,6 +37,7 @@ namespace BillOmatic.Classes
             _type = type;
             _notes = notes;
             apperanceContainer = apperance;
+            _creditorInformation = creditorInformation;
         }
 
         public int type

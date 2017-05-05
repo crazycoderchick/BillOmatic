@@ -95,7 +95,7 @@ namespace BillOmatic
 
             if (allInputsValid)
             {
-                _programManager.createBill(billName, billAmount, DateTimePicker_DueDate.Value, billType, TextBox_BillNotes.Text, SetBillAppearancePreferences());
+                _programManager.createBill(billName, billAmount, DateTimePicker_DueDate.Value, billType, TextBox_BillNotes.Text, SetBillAppearancePreferences(), setCreditorInformation());
                 clearTextFields(); 
             }
         }        
@@ -200,6 +200,79 @@ namespace BillOmatic
                 item.Text = color;
                 ComboBox_EventColor.Items.Add(item);
             }
+        }
+
+        private CreditorInformation setCreditorInformation()
+        {
+            CreditorInformation creditorInformation = new CreditorInformation();
+
+            string creditorName;
+            string creditorAddress;
+            string creditorPhoneNumber;
+            string creditorURL;
+            string username;
+            string password;
+
+            if(TextBox_CreditorName.Text.Length < 0)
+            {
+                creditorName = "";
+            }
+            else
+            {
+                creditorName = TextBox_CreditorName.Text;
+            }
+
+
+            if (TextBox_CreditorAddress.Text.Length < 0)
+            {
+                creditorAddress = "";
+            }
+            else
+            {
+                creditorAddress = TextBox_CreditorAddress.Text;
+            }
+
+
+            if (TextBox_CreditorPhoneNumber.Text.Length < 0)
+            {
+                creditorPhoneNumber = "";
+            }
+            else
+            {
+                creditorPhoneNumber = TextBox_CreditorPhoneNumber.Text;
+            }
+
+
+            if (TextBox_CreditorURL.Text.Length < 0)
+            {
+                creditorURL = "";
+            }
+            else
+            {
+                creditorURL = TextBox_CreditorURL.Text;
+            }
+
+
+            if (TextBox_CreditorURLUsername.Text.Length < 0)
+            {
+                username = "";
+            }
+            else
+            {
+                username = TextBox_CreditorURLUsername.Text;
+            }
+
+
+            if (TextBox_CreditorURLPassword.Text.Length < 0)
+            {
+                password = "";
+            }
+            else
+            {
+                password = TextBox_CreditorURLPassword.Text;
+            }
+
+            return creditorInformation;
         }
         
     }

@@ -23,9 +23,9 @@ namespace BillOmatic.Classes
             Application.Run(f);
         }
 
-        public void createBill(string billName, float billAmount, DateTime billDueDate, int billType, string billNotes, BillAppearance apperance)
+        public void createBill(string billName, float billAmount, DateTime billDueDate, int billType, string billNotes, BillAppearance apperance, CreditorInformation creditorInformation)
         {
-            Bill newBill = new Bill(billName, billAmount, billDueDate, billType, billNotes, apperance);
+            Bill newBill = new Bill(billName, billAmount, billDueDate, billType, billNotes, apperance, creditorInformation);
             addBillToList(newBill);
             saveBillList();
             BillInputForm.clearTextFields();
