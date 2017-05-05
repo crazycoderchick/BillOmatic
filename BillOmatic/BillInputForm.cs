@@ -81,7 +81,7 @@ namespace BillOmatic
             }
 
 
-            if (ComboBox_BillType.SelectedIndex > 0)
+            if (ComboBox_BillType.SelectedIndex >= 0)
             {
                 billType = ComboBox_BillType.SelectedIndex;
                 Label_Warning_BillType.Text = "";
