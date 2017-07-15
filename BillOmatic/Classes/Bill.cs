@@ -73,6 +73,13 @@ namespace BillOmatic.Classes
             Console.WriteLine("Due date: " + _dueDate.ToString());
             Console.WriteLine("Amount due: $" + _amount);
             Console.WriteLine("Notes: " + _notes);
+            Console.WriteLine("Creditor Information: ");
+            Console.WriteLine(_creditorInformation.creditorName);
+            Console.WriteLine(_creditorInformation.creditorAddress);
+            Console.WriteLine(_creditorInformation.creditorPhoneNumber);
+            Console.WriteLine(_creditorInformation.creditorURL);
+            Console.WriteLine(_creditorInformation.username);
+            Console.WriteLine(_creditorInformation.password);
             Console.WriteLine("");
         }
     }
